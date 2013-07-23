@@ -1,0 +1,103 @@
+Express server listening on port \\.\pipe\4ee67250-9466-49ab-aba4-d8be538b664c
+[90mPOST /class/create [36m302 [90m8ms - 68b[0m
+[90mGET /class [32m200 [90m884ms - 2.6kb[0m
+[90mGET /class/create [32m200 [90m162ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m3ms - 68b[0m
+[90mGET /class [32m200 [90m134ms - 2.67kb[0m
+[90mGET /class/create [32m200 [90m136ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m134ms - 2.74kb[0m
+[90mGET /class/create [32m200 [90m127ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m120ms - 2.82kb[0m
+[90mGET /class/create [32m200 [90m141ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m1ms - 68b[0m
+[90mGET /class [32m200 [90m147ms - 2.89kb[0m
+[90mGET /class/create [32m200 [90m103ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m3ms - 68b[0m
+[90mGET /class [32m200 [90m131ms - 2.97kb[0m
+[90mGET /class/create [32m200 [90m72ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m1ms - 68b[0m
+[90mGET /class [32m200 [90m88ms - 3.04kb[0m
+[90mGET /class/create [32m200 [90m81ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m93ms - 3.11kb[0m
+[90mGET /class/create [32m200 [90m60ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m4ms - 68b[0m
+[90mGET /class [32m200 [90m90ms - 3.18kb[0m
+[90mGET /class/create [32m200 [90m62ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m1ms - 68b[0m
+[90mGET /class [32m200 [90m72ms - 3.26kb[0m
+[90mGET /class/create [32m200 [90m74ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m1ms - 68b[0m
+[90mGET /class [32m200 [90m110ms - 3.34kb[0m
+[90mGET /class/create [32m200 [90m53ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m1ms - 68b[0m
+[90mGET /class [32m200 [90m98ms - 3.42kb[0m
+[90mGET /class/create [32m200 [90m61ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m104ms - 3.5kb[0m
+[90mGET /class/create [32m200 [90m60ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m1ms - 68b[0m
+[90mGET /class [32m200 [90m136ms - 3.57kb[0m
+[90mGET /class/create [32m200 [90m125ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m4ms - 68b[0m
+[90mGET /class [32m200 [90m134ms - 3.65kb[0m
+[90mGET /class/create [32m200 [90m61ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m116ms - 3.72kb[0m
+[90mGET /class/create [32m200 [90m63ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m103ms - 3.8kb[0m
+[90mGET /class/create [32m200 [90m73ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m107ms - 3.88kb[0m
+[90mGET /class/create [32m200 [90m57ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m1ms - 68b[0m
+[90mGET /class [32m200 [90m156ms - 3.95kb[0m
+[90mGET /class/create [32m200 [90m72ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m127ms - 4.03kb[0m
+[90mGET /class/create [32m200 [90m64ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m115ms - 4.1kb[0m
+[90mGET /class/create [32m200 [90m74ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m118ms - 4.18kb[0m
+[90mGET /class/create [32m200 [90m50ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m3ms - 68b[0m
+[90mGET /class [32m200 [90m119ms - 4.26kb[0m
+[90mGET /class/create [32m200 [90m74ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m111ms - 4.34kb[0m
+[90mGET /class/create [32m200 [90m98ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m123ms - 4.41kb[0m
+[90mGET /class/create [32m200 [90m49ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m112ms - 4.49kb[0m
+[90mGET /class/create [32m200 [90m82ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m1ms - 68b[0m
+[90mGET /class [32m200 [90m128ms - 4.57kb[0m
+[90mGET /class/create [32m200 [90m63ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m2ms - 68b[0m
+[90mGET /class [32m200 [90m115ms - 4.64kb[0m
+[90mGET /class/create [32m200 [90m67ms - 2.72kb[0m
+[90mPOST /class/create [36m302 [90m3ms - 68b[0m
+[90mGET /class [32m200 [90m111ms - 4.72kb[0m
+[90mGET /class/find/1 [36m304 [90m119ms[0m
+[90mGET /class/find/1 [36m304 [90m142ms[0m
+[90mGET /class/find/1 [36m304 [90m136ms[0m
+[90mGET /about [31m500 [90m44ms[0m
+[90mGET /class [36m304 [90m99ms[0m
+[90mGET /spell [36m304 [90m71ms[0m
+[90mGET /class [36m304 [90m87ms[0m
+[90mGET /class/find/1 [36m304 [90m81ms[0m
+[90mGET /class [36m304 [90m122ms[0m
+[90mGET /class/find/1 [36m304 [90m74ms[0m
+[90mGET /class [36m304 [90m161ms[0m
+[90mGET /class/find/1 [36m304 [90m81ms[0m
+[90mGET /class [36m304 [90m124ms[0m
+[90mGET /class [36m304 [90m73ms[0m
+[90mGET /class [36m304 [90m93ms[0m
+[90mGET /class [36m304 [90m90ms[0m

@@ -1,0 +1,30 @@
+SyntaxError: Unexpected reserved word
+    at Object.Function (unknown source)
+    at Object.exports.compile (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:166:8)
+    at Object.exports.render (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:200:17)
+    at View.exports.renderFile [as engine] (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:228:13)
+    at View.render (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\application.js:500:10)
+    at ServerResponse.res.render (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\response.js:755:7)
+    at Promise.module.exports.app.get.res.render.title (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\routes\class.js:18:21)
+    at Promise.onResolve (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:162:8)
+    at Promise.EventEmitter.emit (events.js:96:17)
+TypeError: C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\views\class\index.jade:12
+    10|           th Short Code
+    11|       tbody
+  > 12|         - for item in classes
+    13|           tr
+    14|             td 1
+    15|             td 
+
+Cannot read property 'length' of undefined
+    at eval (eval at <anonymous> (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:166:8))
+    at eval (eval at <anonymous> (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:166:8))
+    at exports.compile (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:167:35)
+    at Object.exports.render (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:201:14)
+    at View.exports.renderFile [as engine] (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:228:13)
+    at View.render (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\application.js:500:10)
+    at ServerResponse.res.render (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\response.js:755:7)
+    at Promise.module.exports.app.get.res.render.title (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\routes\class.js:18:21)
+    at Promise.onResolve (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:162:8)

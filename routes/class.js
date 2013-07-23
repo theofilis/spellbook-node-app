@@ -11,13 +11,13 @@ module.exports = function (app) {
             page: page
         }
 
-        Class.list(options, function(err, classes) {
+        Class.list(options, function (err, classes) {
             if (err) return res.render('500')
-            
+
             Class.count().exec(function (err, count) {
                 res.render('class/index', {
                     title: 'Classes ',
-                    articles: classes,
+                    classes: classes,
                     page: page + 1,
                     pages: Math.ceil(count / perPage)
                 })
@@ -31,6 +31,13 @@ module.exports = function (app) {
 
     app.get('/class/create', function (req, res) {
         res.render('class/create', { title: 'Create new class ' })
+    });
+
+    app.post('/class/create', function (req, res) {
+        var dndclass = new Class(req.body);
+
+        dndclass.save();
+        return res.redirect('/class');
     });
 
 }

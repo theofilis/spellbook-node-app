@@ -1,0 +1,17 @@
+Error: C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\views\about.jade:1
+  > 1| extends ../layout
+    2| 
+    3| block content
+    4|   div(class="container-center")
+
+ENOENT, no such file or directory 'C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\layout.jade'
+    at Object.fs.openSync (fs.js:338:18)
+    at Object.fs.readFileSync (fs.js:182:15)
+    at Object.Parser.parseExtends (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\parser.js:421:18)
+    at Object.Parser.parseExpr (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\parser.js:210:21)
+    at Object.Parser.parse (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\parser.js:133:25)
+    at parse (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:93:62)
+    at Object.exports.compile (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:156:9)
+    at Object.exports.render (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:200:17)
+    at View.exports.renderFile [as engine] (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\lib\jade.js:228:13)
+    at View.render (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\view.js:75:8)

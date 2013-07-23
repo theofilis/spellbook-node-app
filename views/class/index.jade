@@ -9,44 +9,26 @@ block content
           th Name
           th Short Code
       tbody
-        tr
-          td 1
-          td 
-            a(href="/class/find/1") Druid
-          td Drd
-        tr
-          td 2
-          td 
-            a(href="/class/find/1") Cleric
-          td Clc
-        tr
-          td 3
-          td 
-            a(href="/class/find/1") Bard
-          td Brd
+        - var i = 1;
+        - for item in classes
+          tr
+            td= i
+            td 
+              a(href="/class/find/1")= item.name
+            td= item.code
+            - i = i + 1
     div(class = "pagination pagination-centered")
       ul
-       li.previous
-         a(href="#")
-           img(src="images/previous.png")
-       li.active
-         a(href="#") 1
-       li
-         a(href="#") 2
-       li
-         a(href="#") 3
-       li
-         a(href="#") 4
-       li
-         a(href="#") 5
-       li
-         a(href="#") 6
-       li
-         a(href="#") 7
-       li
-         a(href="#") 8
-       li 
-         a(href="#") 9
-       li.next
-         a(href="#")
-           img(src="images/next.png")   
+        li.previous
+          a(href="#")
+            img(src="images/previous.png")
+        - for (var i = 0; i< pages; i++)
+          - if (i == page)
+            li.active
+              a(href="#")= i
+          - else
+            li
+              a(href="#")= i
+        li.next
+          a(href="#")
+            img(src="images/next.png")   
