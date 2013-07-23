@@ -1,4 +1,3 @@
-node-spellbook-app
+Node Spellbook App
 ==================
 
-node-spellbook-app
