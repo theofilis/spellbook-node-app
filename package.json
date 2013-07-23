@@ -1,26 +1,28 @@
 {
   "name": "WebMatrixExpressSite",
-  "version": "0.2.0",
-  "author": "The WebMatrix Team <webmatrix@microsoft.com>",
-  "description": "A simple boilerplate for building node applications on Windows Azure (or wherever)",
+  "version": "0.0.1",
+  "author": "Theofilis George <theofilis.g@gmail.com>",
+  "description": "",
   "contributors": [
     {
-      "name": "Justin Beckwith",
-      "email": "justbe@microsoft.com"
+      "name": "Theofilis George",
+      "email": "theofilis.g@gmail.com"
     }
   ],
   "main": "./server.js",
   "keywords": [
-    "azure",
     "boilerplate",
     "express"
   ],
   "dependencies": {
     "jade": "*",
-    "express": "~3.1.0"
+    "express": "~3.1.0",
+    "underscore": "*",
+    "mongoose": "*",
+    "mongodb": "*"
   },
   "noAnalyze": true,
-  "license": "Apache",
+  "license": "GPL2",
   "engines": {
     "node": ">=0.6.14"
   }
