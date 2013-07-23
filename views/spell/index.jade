@@ -2,3 +2,33 @@ extends ../layout
 
 block content
   div(class="container-center")
+    table(class="table table-striped")
+      thead
+        tr
+          th #
+          th Name
+          th Description
+      tbody
+        - var i = 1;
+        - for item in spells
+          tr
+            td= i
+            td 
+              a(href="/spell/find/" + item._id)= item.name
+            td= item.shortdescription
+            - i = i + 1
+    div(class = "pagination pagination-centered")
+      ul
+        li.previous
+          a(href="#")
+            img(src="images/previous.png")
+        - for (var i = 0; i< pages; i++)
+          - if (i == page)
+            li.active
+              a(href="#")= i
+          - else
+            li
+              a(href="#")= i
+        li.next
+          a(href="#")
+            img(src="images/next.png")   

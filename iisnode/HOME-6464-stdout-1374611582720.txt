@@ -1,0 +1,15 @@
+Express server listening on port \\.\pipe\f16cebb5-4529-451f-bec1-51f575d97869
+[90mGET /spell/create [36m304 [90m481ms[0m
+[90mPOST /spell/create [36m302 [90m5ms - 68b[0m
+[90mGET /spell [32m200 [90m176ms - 2.63kb[0m
+[90mGET /spell/find/51eee91a5f6b5e4019000001 [32m200 [90m90ms - 3.27kb[0m
+[90mGET /spell/find/51eee91a5f6b5e4019000001 [36m304 [90m81ms[0m
+[90mGET /spell/find/51eee91a5f6b5e4019000001 [36m304 [90m84ms[0m
+[90mGET /spell/create [32m200 [90m88ms - 4.87kb[0m
+[90mGET /spell/create [36m304 [90m115ms[0m
+[90mPOST /spell/create [36m302 [90m3ms - 68b[0m
+[90mGET /spell [32m200 [90m86ms - 2.76kb[0m
+[90mGET /spell/find/51eee9cb5f6b5e4019000002 [32m200 [90m73ms - 3.27kb[0m
+[90mGET /spell/find/51eee9cb5f6b5e4019000002 [36m304 [90m59ms[0m
+[90mGET /spell/find/51eee91a5f6b5e4019000001 [36m304 [90m78ms[0m
+[90mGET /spell/find/51eee9cb5f6b5e4019000002 [36m304 [90m105ms[0m

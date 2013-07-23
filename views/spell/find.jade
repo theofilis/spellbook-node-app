@@ -12,30 +12,21 @@ block append head
 block content
   div(class="container-center")
 
-    h2 Create Water
-    div(class="display-field") Conjuration (Creation) [Water]
+    h2= title
+    div(class="display-field")= spell.school
 
-    mixin displayAttr("Components:", "V, S")
-    mixin displayAttr("Casting Time:", "1 standard action")
-    mixin displayAttr("Range:", "Close (25 ft. + 5 ft./2 levels)")
-    mixin displayAttr("Target:", "")
-    mixin displayAttr("Effect:", "Up to 2 gallons of water/level")
-    mixin displayAttr("Area:", "")
-    mixin displayAttr("Duration:", "Instantaneous")
-    mixin displayAttr("Saving Throw:", "None")
-    mixin displayAttr("Spell Resistance:", "No")
-    mixin displayAttr("Material Component:", "")
-    mixin displayAttr("XP Cost:", "")
+    mixin displayAttr("Levels:", spell.level)
+    mixin displayAttr("Components:", spell.components)
+    mixin displayAttr("Casting Time:", spell.castingTime)
+    mixin displayAttr("Range:", spell.range)
+    mixin displayAttr("Target:", spell.target)
+    mixin displayAttr("Effect:", spell.effect)
+    mixin displayAttr("Area:", spell.area)
+    mixin displayAttr("Duration:", spell.duration)
+    mixin displayAttr("Saving Throw:", spell.savingThrow)
+    mixin displayAttr("Spell Resistance:", spell.spellResistance)
+    mixin displayAttr("Material Component:", spell.materialComponent)
+    mixin displayAttr("XP Cost:", spell.xpcost)
+    mixin displayAttr("Reference:", spell.references)
 
-    div(class="description") 
-      p This spell generates wholesome, drinkable 
-        | water, just like clean rain water. Water can be created 
-        | in an area as small as will
-        | actually contain the liquid, or in an area
-        | three times as large—possibly creating a
-        | downpour or filling many small receptacles.
-      p Note: Conjuration spells can’t create
-        | substances or objects within a creature.
-        | Water weighs about 8 pounds per gallon.
-        | One cubic foot of water contains roughly 8
-        | gallons and weighs about 60 pounds.
+    div(class="description")!= spell.description

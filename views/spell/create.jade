@@ -1,4 +1,46 @@
 extends ../layout
 
+mixin inputControl(idn, label)
+  div(class="furatto-controls")
+    input(type="text", name="#{idn}", id="#{idn}", value="", placeholder="#{label}")
+
+block append head
+  script(src="/javascripts/tinymce/tinymce.min.js")
+  script(type="text/javascript")
+    tinymce.init({
+      selector: "textarea"
+    });
+
 block content
+  .furatto-large-header
+    .furatto-large-container
+      .large-header Add Spell
+      p.motto Add a new spell in the list.
+      hr
+      
   div(class="container-center")
+    div(class="row-fluid")
+      div(class="span12")
+        div(class="furatto-block")
+          form(action="/spell/create", class="horizontal-form", method="post", accept-charset="utf-8")
+            mixin inputControl("name", "Spell's name")
+            mixin inputControl("school", "Spell's school name") 
+            mixin inputControl("level", "Spell's level") 
+            mixin inputControl("components", "Spell's components") 
+            mixin inputControl("castingTime", "Spell's casting time") 
+            mixin inputControl("range", "Spell's range") 
+            mixin inputControl("target", "Spell's target") 
+            mixin inputControl("effect", "Spell's effect") 
+            mixin inputControl("area", "Spell's area") 
+            mixin inputControl("duration", "Spell's duration")
+            mixin inputControl("savingThrow", "Spell's saving throw")
+            mixin inputControl("spellResistance", "Spell's spell resistance")         
+            mixin inputControl("shortdescription", "Spell's short description")
+            mixin inputControl("materialComponent", "Spell's material component")
+            mixin inputControl("xpcost", "Spell's xp cost")
+            mixin inputControl("references", "Spell's book references")
+
+            textarea( name="description", id="description")
+
+            div(class="furatto-actions")
+              input(type="submit", class="btn", name="", id="", value="Create")

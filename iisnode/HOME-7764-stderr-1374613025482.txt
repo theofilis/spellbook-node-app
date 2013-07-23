@@ -1,0 +1,11 @@
+ReferenceError: id is not defined
+    at module.exports.app.get.res.render.title (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\routes\spell.js:29:20)
+    at callbacks (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\router\index.js:161:37)
+    at param (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\router\index.js:135:11)
+    at param (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\router\index.js:132:11)
+    at pass (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\lib\router\index.js:33:10)
+    at next (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\node_modules\connect\lib\proto.js:190:15)
+    at Object.methodOverride [as handle] (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\node_modules\connect\lib\middleware\methodOverride.js:37:5)
+    at next (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\express\node_modules\connect\lib\proto.js:190:15)

@@ -1,2 +1,7 @@
 Express server listening on port \\.\pipe\093e594b-fd7f-4977-8dfc-867b8f889900
 [90mGET /class [32m200 [90m502ms - 4.72kb[0m
+[90mGET /class [36m304 [90m118ms[0m
+[90mGET /class/find/1 [36m304 [90m120ms[0m
+[90mGET /spell/find/1 [36m304 [90m98ms[0m
+[90mGET /class/find/1 [36m304 [90m68ms[0m
+[90mGET /spell [36m304 [90m66ms[0m

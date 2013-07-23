@@ -1,0 +1,50 @@
+Error
+    at new JS_Parse_Error (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\node_modules\with\node_modules\uglify-js\lib\parse.js:196:18)
+    at js_error (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\node_modules\with\node_modules\uglify-js\lib\parse.js:204:11)
+    at croak (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\node_modules\with\node_modules\uglify-js\lib\parse.js:636:9)
+    at token_error (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\node_modules\with\node_modules\uglify-js\lib\parse.js:644:9)
+    at unexpected (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\node_modules\with\node_modules\uglify-js\lib\parse.js:650:9)
+    at as_name (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\node_modules\with\node_modules\uglify-js\lib\parse.js:1225:13)
+    at subscripts (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\node_modules\with\node_modules\uglify-js\lib\parse.js:1251:30)
+    at expr_atom (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\node_modules\with\node_modules\uglify-js\lib\parse.js:1129:20)
+    at maybe_unary (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\node_modules\with\node_modules\uglify-js\lib\parse.js:1287:19)
+    at expr_ops (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\jade\node_modules\with\node_modules\uglify-js\lib\parse.js:1322:24)
+C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\views\spell\create.jade, line 10:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+ReferenceError: next is not defined
+    at Promise.module.exports.app.get.res.render.title (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\routes\spell.js:31:29)
+    at Promise.<anonymous> (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:157:8)
+    at Promise.EventEmitter.emit (events.js:96:17)
+    at Promise.emit (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:79:38)
+    at Promise.reject (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:106:15)
+    at Promise.error (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\lib\promise.js:89:15)
+    at Promise.resolve (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\lib\promise.js:107:24)
+    at Promise.<anonymous> (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:157:8)
+    at Promise.EventEmitter.emit (events.js:96:17)
+    at Promise.emit (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:79:38)
+ReferenceError: next is not defined
+    at Promise.module.exports.app.get.res.render.title (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\routes\spell.js:31:29)
+    at Promise.<anonymous> (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:157:8)
+    at Promise.EventEmitter.emit (events.js:96:17)
+    at Promise.emit (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:79:38)
+    at Promise.reject (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:106:15)
+    at Promise.error (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\lib\promise.js:89:15)
+    at Promise.resolve (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\lib\promise.js:107:24)
+    at Promise.<anonymous> (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:157:8)
+    at Promise.EventEmitter.emit (events.js:96:17)
+    at Promise.emit (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:79:38)
+ReferenceError: next is not defined
+    at Promise.module.exports.app.get.res.render.title (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\routes\spell.js:31:29)
+    at Promise.<anonymous> (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:157:8)
+    at Promise.EventEmitter.emit (events.js:96:17)
+    at Promise.emit (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:79:38)
+    at Promise.reject (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:106:15)
+    at Promise.error (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\lib\promise.js:89:15)
+    at Promise.resolve (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\lib\promise.js:107:24)
+    at Promise.<anonymous> (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:157:8)
+    at Promise.EventEmitter.emit (events.js:96:17)
+    at Promise.emit (C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\node_modules\mongoose\node_modules\mpromise\lib\promise.js:79:38)
+C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\views\spell\create.jade, line 10:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\views\spell\create.jade, line 10:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
