@@ -1,0 +1,13 @@
+Application has thrown an uncaught exception and is terminated:
+MissingSchemaError: Schema hasn't been registered for model "Article".
+Use mongoose.model(name, schema)
+    at Mongoose.model (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\mongoose\lib\index.js:267:13)
+    at module.exports (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\routes\class.js:3:29)
+    at Object.<anonymous> (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\server.js:30:26)
+    at Module._compile (module.js:449:26)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:362:17)
+    at require (module.js:378:17)
+    at Object.<anonymous> (C:\Program Files\iisnode-dev\release\x86\interceptor.js:210:1)

@@ -1,0 +1,67 @@
+doctype 5
+html
+  head
+    - if (typeof(title) == 'undefined')
+        title Express Starter Template
+    - else 
+        title= title + "| Spellbook"
+    
+    // include default stylesheets and any view stylesheets
+    link(rel='stylesheet', href='/stylesheets/furatto.css')
+    link(rel='stylesheet', href='/stylesheets/normalize.css')
+    link(rel='stylesheet', href='/stylesheets/base.css')
+    
+    // include default scripts and any view scripts
+    script(src='/javascripts/modernizr.js')
+    
+    block head
+    
+  body  
+    div(class="navbar inverse-navbar navbar-fixed-top navbar-alpha")
+      div(class="navbar-inner")
+        div(class="container")
+          a(href="#menu", class="menu-trigger meteocon", data-meteocon="M") 
+          div(class="nav-collapse collapse")
+            nav#menu
+              ul(class="nav")
+                li(class="")
+                  a(href="/", class="brand") Spellbook
+                li(class="")
+                  a(href="/spell") Spells
+                li(class="")
+                  a(href="/class") Class
+                li(class="")
+                  a(href="/about") About
+    div(class="main-container")
+        block content
+    
+    footer(class="footer")
+      div(class="footer-wrapper")
+        div(class="container")
+          div(class="row-fluid")
+            div(class="span12")
+              div(class="span6")
+                p(class="copyright") George Theofilis &copy; !{(new Date()).getFullYear()}
+              div(class="span6")
+                ul(class="hrz-nav pull-right")
+                  li
+                    a(href="http://www.facebook.com/theofilis.g", class="facebook") Facebook
+                    a(href="http://twitter.com/g_theofilis", class="twitter") Twitter
+    
+    script(src="/javascripts/jquery.js")
+    script(src="/javascripts/jpanel.js")
+    script(src="/javascripts/jquery.dropkick-1.0.0.js")
+    script(src="/javascripts/jquery.icheck.js")
+    script(src="/javascripts/rainbow-custom.min.js")
+    script(src="/javascripts/tooltip.js")
+    script(src="/javascripts/jquery.tagsinput.js")
+    script(src="/javascripts/picker.js")
+    script(src="/javascripts/picker.date.js")
+    script(src="/javascripts/picker.time.js")
+    script(src="/javascripts/legacy.js")
+    script(src="/javascripts/jquery.toolbar.js")
+    script(src="/javascripts/jquery.avgrund.js")
+    script(src="/javascripts/responsiveslides.js")
+    script(src="/javascripts/responsive-tables.js")
+    script(src="/javascripts/dropdown.js")
+    script(src="/javascripts/manifest.js")

@@ -1,0 +1,41 @@
+extends ../layout
+
+mixin displayAttr(label, attr)
+  if attr != ""
+    div(class="display-label")
+      b= label 
+      = " " + attr
+
+block append head
+  link(rel='stylesheet', href='/stylesheets/spell.css')
+
+block content
+  div(class="container-center")
+
+    h2 Create Water
+    div(class="display-field") Conjuration (Creation) [Water]
+
+    mixin displayAttr("Components:", "V, S")
+    mixin displayAttr("Casting Time:", "1 standard action")
+    mixin displayAttr("Range:", "Close (25 ft. + 5 ft./2 levels)")
+    mixin displayAttr("Target:", "")
+    mixin displayAttr("Effect:", "Up to 2 gallons of water/level")
+    mixin displayAttr("Area:", "")
+    mixin displayAttr("Duration:", "Instantaneous")
+    mixin displayAttr("Saving Throw:", "None")
+    mixin displayAttr("Spell Resistance:", "No")
+    mixin displayAttr("Material Component:", "")
+    mixin displayAttr("XP Cost:", "")
+
+    div(class="description") 
+      p This spell generates wholesome, drinkable 
+        | water, just like clean rain water. Water can be created 
+        | in an area as small as will
+        | actually contain the liquid, or in an area
+        | three times as large—possibly creating a
+        | downpour or filling many small receptacles.
+      p Note: Conjuration spells can’t create
+        | substances or objects within a creature.
+        | Water weighs about 8 pounds per gallon.
+        | One cubic foot of water contains roughly 8
+        | gallons and weighs about 60 pounds.

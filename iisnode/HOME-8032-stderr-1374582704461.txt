@@ -1,0 +1,11 @@
+Error: Failed to lookup view "about"
+    at Function.app.render (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\express\lib\application.js:489:17)
+    at ServerResponse.res.render (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\express\lib\response.js:755:7)
+    at C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\routes\home.js:10:13
+    at callbacks (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\express\lib\router\index.js:161:37)
+    at param (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\express\lib\router\index.js:135:11)
+    at pass (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\express\lib\router\index.js:33:10)
+    at next (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\express\node_modules\connect\lib\proto.js:190:15)
+    at Object.methodOverride [as handle] (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\express\node_modules\connect\lib\middleware\methodOverride.js:37:5)

@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  div(class="container-center")
+    div(class="row-fluid")
+      div(class="span12")
+        div(class="furatto-block")
+          h1 New Class
+          form(action="/class/create", class="horizontal-form", method="post", accept-charset="utf-8")
+            div(class="furatto-controls")
+              label(for="name") Name:
+              input(type="text", name="name", id="name", value="")
+            div(class="furatto-controls")
+              label(for="code") Password:
+              input(type="text", name="code", id="code", value="")
+            div(class="furatto-actions")
+              input(type="submit", class="btn", name="", id="", value="Create")

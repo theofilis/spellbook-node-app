@@ -1,0 +1,77 @@
+Express server listening on port \\.\pipe\1603f5f4-9809-42fb-a027-26d22375d649
+[90mGET /class [32m200 [90m416ms - 2.2kb[0m
+[90mGET /class [32m200 [90m95ms - 2.49kb[0m
+[90mGET /class [32m200 [90m91ms - 2.49kb[0m
+[90mGET /class [32m200 [90m76ms - 2.5kb[0m
+[90mGET /class [32m200 [90m64ms - 2.48kb[0m
+[90mGET /class [32m200 [90m78ms - 2.5kb[0m
+[90mGET /class [36m304 [90m61ms[0m
+[90mGET /class [36m304 [90m75ms[0m
+[90mGET /class [36m304 [90m93ms[0m
+[90mGET /class [36m304 [90m58ms[0m
+[90mGET /class [36m304 [90m61ms[0m
+[90mGET /class [36m304 [90m64ms[0m
+[90mGET /class [36m304 [90m77ms[0m
+[90mGET /class [36m304 [90m65ms[0m
+[90mGET /spell [36m304 [90m56ms[0m
+[90mGET /class [36m304 [90m63ms[0m
+[90mGET /class [36m304 [90m61ms[0m
+[90mGET /class [36m304 [90m50ms[0m
+[90mGET /class [32m200 [90m72ms - 2.53kb[0m
+[90mGET /class/find/1 [32m200 [90m68ms - 2.43kb[0m
+[90mGET /class/find/1 [32m200 [90m67ms - 2.73kb[0m
+[90mGET /class/find/1 [32m200 [90m73ms - 2.85kb[0m
+[90mGET /class [36m304 [90m58ms[0m
+[90mGET /spell [36m304 [90m56ms[0m
+[90mGET /class [36m304 [90m86ms[0m
+[90mGET /class/find/1 [36m304 [90m54ms[0m
+[90mGET /class [36m304 [90m70ms[0m
+[90mGET /spell [36m304 [90m58ms[0m
+[90mGET /class [36m304 [90m61ms[0m
+[90mGET /class/find/1 [36m304 [90m70ms[0m
+[90mGET /spell [36m304 [90m57ms[0m
+[90mGET /class [36m304 [90m67ms[0m
+[90mGET /class [36m304 [90m63ms[0m
+[90mGET /class/find/1 [36m304 [90m93ms[0m
+[90mGET / [36m304 [90m60ms[0m
+[90mGET /spell [36m304 [90m48ms[0m
+[90mGET /spell/find/1 [31m500 [90m15ms[0m
+[90mGET /spell/find/1 [31m500 [90m244ms[0m
+[90mGET /spell/find/1 [31m500 [90m72ms[0m
+[90mGET /spell/find/1 [31m500 [90m236ms[0m
+[90mGET /spell/find/1 [31m500 [90m99ms[0m
+[90mGET /spell/find/1 [32m200 [90m55ms - 2.95kb[0m
+[90mGET /spell/find/1 [32m200 [90m63ms - 2.95kb[0m
+[90mGET /spell/find/1 [36m304 [90m54ms[0m
+[90mGET /spell/find/1 [36m304 [90m65ms[0m
+[90mGET /spell/find/1 [32m200 [90m54ms - 2.35kb[0m
+[90mGET /spell/find/1 [32m200 [90m80ms - 3.29kb[0m
+[90mGET /spell/find/1 [32m200 [90m70ms - 3.29kb[0m
+[90mGET /spell/find/1 [32m200 [90m60ms - 3.29kb[0m
+[90mGET /spell/find/1 [32m200 [90m67ms - 3.22kb[0m
+[90mGET /spell/find/1 [36m304 [90m52ms[0m
+[90mGET /spell/find/1 [32m200 [90m74ms - 3.27kb[0m
+[90mGET /spell/find/1 [36m304 [90m90ms[0m
+[90mGET /class [36m304 [90m133ms[0m
+[90mGET /class [36m304 [90m140ms[0m
+[90mGET /class/find/1 [36m304 [90m68ms[0m
+[90mGET /class/find/1 [36m304 [90m80ms[0m
+[90mGET /spell [36m304 [90m62ms[0m
+[90mGET /class [36m304 [90m57ms[0m
+[90mGET /spell [36m304 [90m44ms[0m
+[90mGET /class [36m304 [90m75ms[0m
+[90mGET /class/find/1 [36m304 [90m80ms[0m
+[90mGET /class/find/1 [36m304 [90m53ms[0m
+[90mGET /spell/find/1 [36m304 [90m83ms[0m
+[90mGET /class [36m304 [90m77ms[0m
+[90mGET /class/find/1 [36m304 [90m73ms[0m
+[90mGET /spell [36m304 [90m123ms[0m
+[90mGET /class [36m304 [90m87ms[0m
+[90mGET /spell [36m304 [90m102ms[0m
+[90mGET /class [36m304 [90m96ms[0m
+[90mGET /class/find/1 [36m304 [90m138ms[0m
+[90mGET /class/find/1 [36m304 [90m70ms[0m
+[90mGET /class/find/1 [32m200 [90m68ms - 2.85kb[0m
+[90mGET /spell/find/1 [36m304 [90m71ms[0m
+[90mGET /spell/find/1 [36m304 [90m55ms[0m
+[90mGET /spell/find/1 [36m304 [90m89ms[0m

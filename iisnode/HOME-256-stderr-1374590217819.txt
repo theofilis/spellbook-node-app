@@ -1,0 +1,19 @@
+Error: C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\views\class\index.jade:33
+    31|            img(src="assets/img/previous.png")
+    32|        li.active
+  > 33|          a(href="#")1
+    34|        li
+    35|          a(href="#")2
+    36|        li
+
+Unexpected token `tag` expected `text`, `code`, `:`, `newline` or `eos`
+    at Object.Parser.tag (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\jade\lib\parser.js:692:15)
+    at Object.Parser.parseTag (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\jade\lib\parser.js:622:17)
+    at Object.Parser.parseExpr (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\jade\lib\parser.js:198:21)
+    at Object.Parser.block (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\jade\lib\parser.js:590:25)
+    at Object.Parser.tag (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\jade\lib\parser.js:719:26)
+    at Object.Parser.parseTag (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\jade\lib\parser.js:622:17)
+    at Object.Parser.parseExpr (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\jade\lib\parser.js:198:21)
+    at Object.Parser.block (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\jade\lib\parser.js:590:25)
+    at Object.Parser.tag (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\jade\lib\parser.js:719:26)
+    at Object.Parser.parseTag (C:\Users\as_tr_000\Documents\My Web Sites\Demo Express Site\node_modules\jade\lib\parser.js:622:17)

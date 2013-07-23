@@ -1,0 +1,29 @@
+.footer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+ul#social li {
+  display: inline;
+  list-style: none;
+}
+ul#social li a {
+  color: #999;
+  text-decoration: none;
+}
+a.facebook,
+a.twitter {
+  display: block;
+  float: left;
+  height: 24px;
+  padding-left: 17px;
+  text-indent: -9999px;
+  width: 16px;
+}
+a.facebook {
+  background: url("../images/facebook.png") no-repeat;
+}
+a.twitter {
+  background: url("../images/twitter.png") no-repeat;
+}
