@@ -1,0 +1,4 @@
+Express server listening on port \\.\pipe\701884e2-00c0-482a-b22f-5592bdd0a2c4
+[90mGET /class/find/51eec1d57d67c03c18000004 [32m200 [90m463ms - 2.85kb[0m
+[90mGET /spell/find/1 [31m500 [90m15ms[0m
+[90mGET /spell/find/1 [31m500 [90m13ms[0m

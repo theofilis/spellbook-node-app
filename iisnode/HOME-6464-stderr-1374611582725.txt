@@ -1,6 +1,0 @@
-C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\views\spell\create.jade, line 10:
-Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
-C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\views\spell\create.jade, line 10:
-Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
-C:\Users\as_tr_000\Documents\My Web Sites\node-spellbook-app\views\spell\create.jade, line 10:
-Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
