@@ -1,9 +1,0 @@
-Express server listening on port \\.\pipe\fb2bc88d-8372-4a58-b6a0-2fe06b1b648b
-[90mGET /class/find/51eec1d57d67c03c18000004 [36m304 [90m441ms[0m
-[90mGET /class/find/51eec1d57d67c03c18000004 [31m500 [90m115ms[0m
-[90mGET /class/find/51eec1d57d67c03c18000004 [31m500 [90m137ms[0m
-[90mGET /spell [36m304 [90m106ms[0m
-[90mGET /spell/find/51eee9cb5f6b5e4019000002 [36m304 [90m117ms[0m
-[90mGET /spell/find/51eef2a11855200c1e000001 [32m200 [90m105ms - 3.13kb[0m
-[90mGET /class [36m304 [90m135ms[0m
-[90mGET /class/find/51eec19b7d67c03c18000002 [31m500 [90m74ms[0m

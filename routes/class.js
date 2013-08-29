@@ -28,36 +28,38 @@ module.exports = function (app) {
 
     app.get('/class/find/:id', function (req, res, next) {
         var id = req.params.id;
-
+        
         Class.load(id, function (err, dnclass) {
             if (err) return res.render('500');
             if (!dnclass) return res.render('500');
+            var options = {};
+            Spell.list(options, function (err, classes) {
 
-            var zeros = Spell.list({criteria: {'level': { $regex: '.*' + dnclass.code + '\s0.*', $options: 'i' }}});
-            var first = Spell.list({criteria: {'level': { $regex: '.*' + dnclass.code + '\s1.*', $options: 'i' }}});
-            var seconds = Spell.list({criteria: {'level': { $regex: '.*' + dnclass.code + '\s2.*', $options: 'i' }}});
-            var thirds = Spell.list({criteria: {'level': { $regex: '.*' + dnclass.code + '\s3.*', $options: 'i' }}});
-            var fourths = Spell.list({criteria: {'level': { $regex: '.*' + dnclass.code + '\s4.*', $options: 'i' }}});
-            var fifth = Spell.list({criteria: {'level': { $regex: '.*' + dnclass.code + '\s5.*', $options: 'i' }}});
-            var sixth = Spell.list({criteria: {'level': { $regex: '.*' + dnclass.code + '\s6.*', $options: 'i' }}});
-            var seventh = Spell.list({criteria: {'level': { $regex: '.*' + dnclass.code + '\s7.*', $options: 'i' }}});
-            var eighth = Spell.list({criteria: {'level': { $regex: '.*' + dnclass.code + '\s8.*', $options: 'i' }}});
-            var nineth = Spell.list({criteria: {'level': { $regex: '.*' + dnclass.code + '\s9.*', $options: 'i' }}});
+                var zeros = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 0", "i").test(cl.level); });
+                var first = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 1", "i").test(cl.level); });
+                var seconds = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 2", "i").test(cl.level); });
+                var thirds = _.filter(classes, function (cl) { return new RegExp(dnclass.code +" 3", "i").test(cl.level); });
+                var fourths = _.filter(classes, function (cl) { return new RegExp(dnclass.code +" 4", "i").test(cl.level); });
+                var fifth = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 5", "i").test(cl.level); });
+                var sixth = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 6", "i").test(cl.level); });
+                var seventh = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 7", "i").test(cl.level); });
+                var eighth = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 8", "i").test(cl.level); });
+                var nineth = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 9", "i").test(cl.level); });
 
-
-            res.render('class/find', {
-                title: dnclass.name,
-                zeros: zeros,
-                first:  first,
-                seconds: seconds,
-                thirds: thirds,
-                fourths: fourths,
-                fifth: fifth,
-                sixth: sixth,
-                seventh: seventh,
-                eighth: eighth,
-                nineth: nineth
-            })
+                res.render('class/find', {
+                    title: dnclass.name,
+                    zeros: zeros,
+                    first: first,
+                    seconds: seconds,
+                    thirds: thirds,
+                    fourths: fourths,
+                    fifth: fifth,
+                    sixth: sixth,
+                    seventh: seventh,
+                    eighth: eighth,
+                    nineth: nineth
+                });
+            });
         })
     });
 
