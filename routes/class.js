@@ -17,7 +17,7 @@ module.exports = function (app) {
 
             Class.count().exec(function (err, count) {
                 res.render('class/index', {
-                    title: 'Classes ',
+                    title: 'List of all Classes',
                     classes: classes,
                     page: page + 1,
                     pages: Math.ceil(count / perPage)

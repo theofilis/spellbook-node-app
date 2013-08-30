@@ -1,166 +1,35 @@
 extends ../layout
 
+mixin level(num, spell)
+  - if (spell.length > 0)
+    h3 #{num}<sup>th</sup> level spell
+    table(class="table table-striped")
+      thead
+        tr
+          th
+          th Name
+          th Description
+      tbody
+        - var i = 1;
+        - each item in spell
+          tr
+            td= i
+              
+            td 
+              a(href="/spell/find/" + item._id)=item.name
+            td
+            - i = i + 1
+
 block content
+  h1.page-header Spell List of #{title}
   div(class="container-center")
-    - if (zeros.length > 0)
-      h2 0-LEVEL SPELLS
-      table(class="table table-striped")
-        thead
-          tr
-            th Name
-            th Description
-        tbody
-          - var i = 1;
-            - for item in zeros
-              tr
-                td
-                td 
-                  a(href="/class/find/")
-                td
-                - i = i + 1
-    - if (first.length > 0)
-      h2 1ST-LEVEL SPELLS
-      table(class="table table-striped")
-        thead
-          tr
-            th Name
-            th Description
-        tbody
-          - var i = 1;
-            - for item in first
-              tr
-                td
-                td 
-                  a(href="/class/find/")
-                td
-                - i = i + 1
-    - if (seconds.length > 0)
-      h2 2ND-LEVEL SPELLS
-      table(class="table table-striped")
-        thead
-          tr
-            th Name
-            th Description
-        tbody
-          - var i = 1;
-            - for item in seconds
-              tr
-                td
-                td 
-                  a(href="/class/find/")
-                td
-                - i = i + 1
-    - if (thirds.length > 0)
-      h2 3RD-LEVEL SPELLS
-      table(class="table table-striped")
-        thead
-          tr
-            th Name
-            th Description
-        tbody
-          - var i = 1;
-            - for item in thirds
-              tr
-                td
-                td 
-                  a(href="/class/find/")
-                td
-                - i = i + 1
-    - if (fourths.length > 0)
-      h2 4TH-LEVEL SPELLS
-      table(class="table table-striped")
-        thead
-          tr
-            th
-            th Name
-            th Description
-        tbody
-          - var i = 1;
-          - each item in fourths
-            tr
-              td= i
-                
-              td 
-                a(href="/spell/find/"+item._id)=item.name
-              td
-                - i = i + 1
-    - if (fifth.length > 0)
-      h2 5TH-LEVEL SPELLS
-      table(class="table table-striped")
-        thead
-          tr
-            th Name
-            th Description
-        tbody
-          - var i = 1;
-            - for item in fifth
-              tr
-                td
-                td 
-                  a(href="/class/find/")
-                td
-                - i = i + 1
-    - if (sixth.length > 0)
-      h2 6TH-LEVEL SPELLS
-      table(class="table table-striped")
-        thead
-          tr
-            th Name
-            th Description
-        tbody
-          - var i = 1;
-            - for item in sixth
-              tr
-                td
-                td 
-                  a(href="/class/find/")
-                td
-                - i = i + 1
-    - if (seventh.length > 0)
-      h2 7TH-LEVEL SPELLS
-      table(class="table table-striped")
-        thead
-          tr
-            th Name
-            th Description
-        tbody
-          - var i = 1;
-            - for item in seventh
-              tr
-                td
-                td 
-                  a(href="/class/find/")
-                td
-                - i = i + 1
-    - if (eighth.length > 0)
-      h2 8TH-LEVEL SPELLS
-      table(class="table table-striped")
-        thead
-          tr
-            th Name
-            th Description
-        tbody
-          - var i = 1;
-            - for item in eighth
-              tr
-                td
-                td 
-                  a(href="/class/find/")
-                td
-                - i = i + 1
-    - if (nineth.length > 0)
-      h2 9TH-LEVEL SPELLS
-      table(class="table table-striped")
-        thead
-          tr
-            th Name
-            th Description
-        tbody
-          - var i = 1;
-            - for item in nineth
-              tr
-                td
-                td 
-                  a(href="/class/find/")
-                td
-                - i = i + 1
+    +level(0, zeros)
+    +level(1, first)
+    +level(2, seconds)
+    +level(3, thirds)
+    +level(4, fourths)
+    +level(5, fifth)
+    +level(6, sixth)
+    +level(7, seventh)
+    +level(8, eighth)
+    +level(9, nineth)

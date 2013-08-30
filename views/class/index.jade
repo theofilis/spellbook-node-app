@@ -1,6 +1,7 @@
 extends ../layout
 
 block content
+  h1.page-header= title
   div(class="container-center")
     table(class="table table-striped")
       thead
@@ -17,18 +18,17 @@ block content
               a(href="/class/find/" + item._id)= item.name
             td= item.code
             - i = i + 1
-    div(class = "pagination pagination-centered")
-      ul
+    ul(class = "pagination")
+      - if (page-1 > 0)
         li.previous
-          a(href="#")
-            img(src="images/previous.png")
-        - for (var i = 0; i< pages; i++)
-          - if (i == page)
-            li.active
-              a(href="#")= i
-          - else
-            li
-              a(href="#")= i
+          a(href="/class/index?page=#{page-1}") prev
+      - for (var i = 0; i < pages; i++)
+        - if (i == page-1)
+          li.disabled
+            a(href="/class/index?page=#{i}")= i+1
+        - else
+          li.active
+            a(href="/class/index?page=#{i}")= i+1
+      - if (pages > page)
         li.next
-          a(href="#")
-            img(src="images/next.png")   
+          a(href="/class/index?page=#{page}") next  
