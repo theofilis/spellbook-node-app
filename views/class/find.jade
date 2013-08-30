@@ -8,6 +8,7 @@ mixin level(num, spell)
         tr
           th
           th Name
+          th School
           th Description
       tbody
         - var i = 1;
@@ -17,7 +18,8 @@ mixin level(num, spell)
               
             td 
               a(href="/spell/find/" + item._id)=item.name
-            td
+            td= item.school
+            td.trunc= item.shortdescription
             - i = i + 1
 
 block content
@@ -33,3 +35,10 @@ block content
     +level(7, seventh)
     +level(8, eighth)
     +level(9, nineth)
+
+block script
+  script(src="/javascripts/jquery.succinct.min.js")
+  script.
+    $(document).ready(function () {
+     $('.trunc').succinct({size: 50});
+    }
