@@ -48,6 +48,7 @@ module.exports = function (app) {
 
                 res.render('class/find', {
                     title: dnclass.name,
+                    dndclass: dnclass,
                     zeros: zeros,
                     first: first,
                     seconds: seconds,

@@ -24,6 +24,10 @@ mixin level(num, spell)
 
 block content
   h1.page-header Spell List of #{title}
+    a(href="/class/edit/#{dndclass._id}", class="bt pull-right")
+      span(class="glyphicon glyphicon-edit", style="color:#419641")
+    a(href="/class/delete/#{dndclass._id}", class="bt pull-right")
+      span(class="glyphicon glyphicon-trash", style="margin-right: 10px; color:#c12e2a;")
   div(class="container-center")
     +level(0, zeros)
     +level(1, first)

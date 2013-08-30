@@ -12,7 +12,11 @@ block append head
 block content
   div(class="container-center")
 
-    h2= title
+    h2.page-header= title
+      a(href="/spell/edit/#{spell._id}", class="bt pull-right")
+        span(class="glyphicon glyphicon-edit", style="color:#419641")
+      a(href="/spell/delete/#{spell._id}", class="bt pull-right")
+        span(class="glyphicon glyphicon-trash", style="margin-right: 10px; color:#c12e2a;")
     div(class="display-field")= spell.school
 
     mixin displayAttr("Levels:", spell.level)
