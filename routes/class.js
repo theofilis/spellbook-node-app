@@ -28,7 +28,7 @@ module.exports = function (app) {
 
     app.get('/class/find/:id', function (req, res, next) {
         var id = req.params.id;
-        
+
         Class.load(id, function (err, dnclass) {
             if (err) return res.render('500');
             if (!dnclass) return res.render('500');
@@ -38,8 +38,8 @@ module.exports = function (app) {
                 var zeros = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 0", "i").test(cl.level); });
                 var first = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 1", "i").test(cl.level); });
                 var seconds = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 2", "i").test(cl.level); });
-                var thirds = _.filter(classes, function (cl) { return new RegExp(dnclass.code +" 3", "i").test(cl.level); });
-                var fourths = _.filter(classes, function (cl) { return new RegExp(dnclass.code +" 4", "i").test(cl.level); });
+                var thirds = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 3", "i").test(cl.level); });
+                var fourths = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 4", "i").test(cl.level); });
                 var fifth = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 5", "i").test(cl.level); });
                 var sixth = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 6", "i").test(cl.level); });
                 var seventh = _.filter(classes, function (cl) { return new RegExp(dnclass.code + " 7", "i").test(cl.level); });
@@ -62,6 +62,15 @@ module.exports = function (app) {
                 });
             });
         })
+    });
+
+    app.get('/class/delete/:id', function (req, res, next) {
+        var id = req.params.id;
+
+        Class.findByIdAndRemove(id, function (error) {
+            res.redirect('/class');
+        });
+
     });
 
     app.get('/class/create', function (req, res) {
