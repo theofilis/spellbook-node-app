@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -27,7 +26,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-mongoose.connect('mongodb://localhost/spellbook');
+mongoose.connect('mongodb://barendd:barendd@ds039257.mongolab.com:39257/spellbook');
 
 // Bootstrap models
 var models_path = __dirname + '/model'
