@@ -48,4 +48,12 @@ module.exports = function (app) {
         return res.redirect('/spell');
     });
 
+    app.get('/spell/delete/:id', function (req, res, next) {
+        var id = req.params.id;
+
+        Spell.findByIdAndRemove(id, function (error) {
+            res.redirect('/spell');
+        });
+
+    });
 }

@@ -15,7 +15,7 @@ block content
     h2.page-header= title
       a(href="/spell/edit/#{spell._id}", class="bt pull-right")
         span(class="glyphicon glyphicon-edit", style="color:#419641")
-      a(href="/spell/delete/#{spell._id}", class="bt pull-right")
+      a(href="/spell/delete/#{spell._id}", id="delete", class="bt pull-right")
         span(class="glyphicon glyphicon-trash", style="margin-right: 10px; color:#c12e2a;")
     div(class="display-field")= spell.school
 
@@ -34,3 +34,35 @@ block content
     mixin displayAttr("Reference:", spell.references)
 
     div(class="description")!= spell.description
+
+block script
+  script(src="/javascripts/bootbox.min.js")
+ 
+  script
+    $(document).ready(function () {
+
+        $('#delete').click(function(e) {
+            e.preventDefault();
+
+            bootbox.dialog({
+                message: "Do you want to delete D&amp;D Spell <b>#{title}</b>?",
+                title: "Danger",
+                buttons: {
+                    success: {
+                        label: "Yes",
+                        className: "btn-success",
+                        callback: function() {
+                            window.location = "/spell/delete/#{spell._id}";
+                        }
+                    },
+                    danger: {
+                        label: "No",
+                        className: "btn-danger",
+                        callback: function() {
+                            bootbox.hideAll();
+                        }
+                    }
+                }
+            });
+        });
+    });
