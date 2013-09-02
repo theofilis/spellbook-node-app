@@ -36,13 +36,12 @@ html
               a(href="/class") Class
             li(class="")
               a(href="/about") About
+    block jumbotron
 
     div(class="container")
         block content
     
-    footer(class="footer")
-      div(class="container")
-        p(class="copyright") George Theofilis &copy; !{(new Date()).getFullYear()}
+    block footer
         
     script(src="/javascripts/jquery.js")
     script(src="/javascripts/bootstrap.min.js")

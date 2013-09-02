@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  h1.page-header=title
+  div(class="row")
+    div(class="col-lg-12")
+      form(action="/class/edit/#{dndclass._id}", method="post", accept-charset="utf-8")
+        .form-group
+          label(for="name") Class name
+          input(type="text", class="form-control", name="name", id="name", value="#{dndclass.name}")
+        .form-group
+          label(for="code") Class short code
+          input(type="text", class="form-control", name="code", id="code", value="#{dndclass.code}")
+        .form-group
+          input(type="submit", class="btn btn-default", name="", id="", value="Update")

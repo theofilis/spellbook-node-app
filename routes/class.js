@@ -84,4 +84,37 @@ module.exports = function (app) {
         return res.redirect('/class');
     });
 
+    app.get('/class/edit/:id', function (req, res) {
+        var id = req.params.id;
+
+        Class.load(id, function (err, dndclass) {
+            if (err) return next(err)
+            if (!dndclass) return next(new Error('not found'))
+
+            res.render('class/update', {
+                title: 'Update class ' + dndclass.name,
+                dndclass: dndclass
+            })
+        })
+    });
+
+    app.post('/class/edit/:id', function (req, res) {
+        var id = req.params.id;
+
+        Class.load(id, function (err, dndclass) {
+            if (err) return res.render('500');
+            if (!dndclass) return res.render('500');
+
+            dndclass.name = req.body.name;
+            dndclass.code = req.body.code;
+
+            dndclass.save(function (err) {
+                if (err) { return res.render('500'); }
+
+                return res.redirect('/class/find/' + id);
+            })
+        })
+
+    });
+
 }

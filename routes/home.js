@@ -2,7 +2,7 @@ module.exports = function (app) {
 
     // home page
     app.get('/', function (req, res) {
-        res.render('index', { title: 'Home Page ' })
+        res.render('index', { title: 'Spell Book ' })
     });
 
     // about page

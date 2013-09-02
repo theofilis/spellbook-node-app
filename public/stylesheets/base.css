@@ -1,43 +1,9 @@
-.navbar-inverse {
-  background-image: -webkit-gradient(linear,left 0,left 100%,from(#670A0A),to(#831515));
-  background-image: -webkit-linear-gradient(top,#670A0A,0%,#831515,100%);
-  background-image: -moz-linear-gradient(top,#670A0A 0,#831515 100%);
-  background-image: linear-gradient(to bottom,#670A0A 0,#831515 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c',endColorstr='#ff222222',GradientType=0);
-}
 .footer {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  height: 60px;
 }
 body {
-  padding-top: 70px;
-  padding-bottom: 30px;
-}
-ul#social li {
-  display: inline;
-  list-style: none;
-}
-ul#social li a {
-  color: #999;
-  text-decoration: none;
-}
-a.facebook,
-a.twitter {
-  display: block;
-  float: left;
-  height: 24px;
-  padding-left: 17px;
-  text-indent: -9999px;
-  width: 16px;
-}
-a.facebook {
-  background: url("../images/facebook.png") no-repeat;
-}
-a.twitter {
-  background: url("../images/twitter.png") no-repeat;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 .pagination {
   margin: 20px 0;
