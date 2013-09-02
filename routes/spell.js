@@ -31,7 +31,7 @@ module.exports = function (app) {
             if (err) return next(err)
             if (!spell) return next(new Error('not found'))
             res.render('spell/find', {
-                title: spell.name ,
+                title: spell.name,
                 spell: spell
             })
         })
@@ -54,6 +54,53 @@ module.exports = function (app) {
         Spell.findByIdAndRemove(id, function (error) {
             res.redirect('/spell');
         });
+
+    });
+
+    app.get('/spell/edit/:id', function (req, res) {
+        var id = req.params.id;
+
+        Spell.load(id, function (err, spell) {
+            if (err) return res.render('500');
+            if (!spell) return res.render('500');
+
+            res.render('spell/update', {
+                title: 'Update spell ' + spell.name,
+                spell: spell
+            })
+        })
+    });
+
+    app.post('/spell/edit/:id', function (req, res) {
+        var id = req.params.id;
+
+        Spell.load(id, function (err, spell) {
+            if (err) return res.render('500');
+            if (!spell) return res.render('500');
+
+            spell.name = req.body.name;
+            spell.school = req.body.school;
+            spell.level = req.body.level;
+            spell.components = req.body.components;
+            spell.castingTime = req.body.castingTime;
+            spell.range = req.body.range;
+            spell.target = req.body.target;
+            spell.effect = req.body.effect;
+            spell.area = req.body.area;
+            spell.duration = req.body.duration;
+            spell.materialComponent = req.body.materialComponent;
+            spell.xpcost = req.body.xpcost;
+            spell.savingThrow = req.body.savingThrow;
+            spell.spellResistance = req.body.spellResistance;
+            spell.shortdescription = req.body.shortdescription;
+            spell.references = req.body.references;
+
+            spell.save(function (err) {
+                if (err) { return res.render('500'); }
+
+                return res.redirect('/spell/find/' + id);
+            })
+        })
 
     });
 }

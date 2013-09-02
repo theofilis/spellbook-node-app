@@ -1,0 +1,71 @@
+extends ../layout
+
+mixin inputControl(idn, label, val)
+  input(type="text", name="#{idn}", id="#{idn}", class="form-control", value="#{val}", placeholder="#{label}")
+
+block append head
+  script(src="/javascripts/tinymce/tinymce.min.js")
+  script(type="text/javascript")
+    tinymce.init({
+        selector: "textarea",
+        menubar:false,
+        theme: "modern",
+        height: 300,
+        statusbar: false
+      });
+
+block content
+  h1.page-header Update spell #{spell.name}
+  .container
+    form(action="/spell/edit/#{spell._id}", class="horizontal-form", method="post", accept-charset="utf-8")
+      .row.form-group
+        .col-lg-6.col-xs-12
+          mixin inputControl("name", "Spell's name", spell.name)
+        .col-lg-6.col-xs-12
+          mixin inputControl("school", "Spell's school name", spell.school) 
+      .row.form-group
+        .col-lg-12.col-xs-12
+          mixin inputControl("level", "Spell's level", spell.level) 
+      .row.form-group
+        .col-lg-4.col-xs-12
+          mixin inputControl("components", "Spell's components", spell.components) 
+        .col-lg-4.col-xs-12
+          mixin inputControl("castingTime", "Spell's casting time", spell.castingTime) 
+        .col-lg-4.col-xs-12
+          mixin inputControl("range", "Spell's range", spell.range) 
+      .row.form-group
+        .col-lg-4.col-xs-12
+          mixin inputControl("target", "Spell's target", spell.target) 
+        .col-lg-4.col-xs-12
+          mixin inputControl("effect", "Spell's effect", spell.effect) 
+        .col-lg-4.col-xs-12
+          mixin inputControl("area", "Spell's area", spell.area) 
+      .row.form-group
+        .col-lg-4.col-xs-12
+          mixin inputControl("duration", "Spell's duration", spell.duration)
+        .col-lg-4.col-xs-12
+          mixin inputControl("materialComponent", "Spell's material component", spell.materialComponent)
+        .col-lg-4.col-xs-12
+          mixin inputControl("xpcost", "Spell's xp cost", spell.xpcost)     
+      .row.form-group
+        .col-lg-6.col-xs-12
+          mixin inputControl("savingThrow", "Spell's saving throw", spell.savingThrow)
+        .col-lg-6.col-xs-12
+          mixin inputControl("spellResistance", "Spell's spell resistance", spell.spellResistance)         
+      .row.form-group
+        .col-lg-12.col-xs-12
+          mixin inputControl("shortdescription", "Spell's short description", spell.shortdescription)
+      .row.form-group
+        .col-lg-12.col-xs-12
+          mixin inputControl("references", "Spell's book references", spell.references)
+      .row.form-group
+        .col-lg-12.col-xs-12
+          textarea( name="description", id="description")
+
+      input(type="submit", class="btn btn-primary btn-lg btn-block", name="", id="", value="Update")
+
+block script
+  script(type="text/javascript")
+    $(document).ready(function () {
+      $('#description').html('#{spell.description}');
+    });
