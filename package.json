@@ -19,7 +19,8 @@
     "express": "~3.1.0",
     "underscore": "*",
     "mongoose": "*",
-    "mongodb": "*"
+    "mongodb": "*",
+    "epiceditor": "*"
   },
   "noAnalyze": true,
   "license": "GPL2",

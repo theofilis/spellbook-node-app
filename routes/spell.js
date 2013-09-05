@@ -1,6 +1,7 @@
 module.exports = function (app) {
     var mongoose = require('mongoose')
        , Spell = mongoose.model('Spell')
+       , path = require('path')
        , _ = require('underscore');
 
     app.get('/spell', function (req, res) {

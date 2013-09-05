@@ -2,18 +2,7 @@ extends ../layout
 
 mixin inputControl(idn, label)
   input(type="text", name="#{idn}", id="#{idn}", class="form-control", value="", placeholder="#{label}")
-
-block append head
-  script(src="/javascripts/tinymce/tinymce.min.js")
-  script(type="text/javascript")
-    tinymce.init({
-      selector: "textarea",
-      menubar:false,
-      theme: "modern",
-      height: 300,
-      statusbar: false
-    });
-
+     
 block content
   h1.page-header Add Spell 
     small Add a new spell in the list.
@@ -61,6 +50,19 @@ block content
           mixin inputControl("references", "Spell's book references")
       .row.form-group
         .col-lg-12.col-xs-12
-          textarea( name="description", id="description")
+          div( name="description", id="description")
 
       input(type="submit", class="btn btn-primary btn-lg btn-block", name="", id="", value="Create")
+
+block script
+  script(src="/javascripts/epiceditor.js")
+  script
+    $(document).ready(function () {
+        var editor = new EpicEditor({ 
+        container: 'description',
+        theme: {
+            base: '/themes/epiceditor.css',
+            preview: '/themes/preview/preview-dark.css',
+            editor: '/themes/editor/epic-dark.css'
+        }, }).load();
+    });
