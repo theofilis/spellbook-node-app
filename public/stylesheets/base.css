@@ -140,15 +140,17 @@ body {
 }
 .jumbotron h1 {
   font-size: 100px;
+  color: white;
   font-family: 'Myriad-Pro', 'Myriad', helvetica, arial, sans-serif;
   text-shadow: 2px 3px 3px #292929;
   letter-spacing: -7px;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px black;
 }
 .jumbotron p {
   font-size: 50px;
+  color: white;
   font-family: 'Myriad-Pro', 'Myriad', helvetica, arial, sans-serif;
   text-shadow: 2px 3px 3px #292929;
-  letter-spacing: -3px;
-  -webkit-text-stroke: 1px white;
+  letter-spacing: -px;
+  -webkit-text-stroke: 1px black;
 }

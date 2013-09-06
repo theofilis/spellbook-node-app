@@ -10,7 +10,7 @@ block append head
   link(rel='stylesheet', href='/stylesheets/spell.css')
 
 block content
-  div(class="container-center")
+  div(class="container-center main")
 
     h2.page-header= title
       a(href="/spell/edit/#{spell._id}", class="bt pull-right")
@@ -37,10 +37,16 @@ block content
 
 block script
   script(src="/javascripts/bootbox.min.js")
+  script(src="/javascripts/flowtype.js")
  
   script
     $(document).ready(function () {
-
+        $('.main').flowtype({ 
+             minFont   : 16,
+             maxFont   : 30,
+             fontRatio : 40,
+             lineRatio : 1.45
+        });
         $('#delete').click(function(e) {
             e.preventDefault();
 
