@@ -38,13 +38,6 @@ require('./routes/home')(app);
 require('./routes/class')(app);
 require('./routes/spell')(app);
 
-app.get('/javascripts/epiceditor.js', function (req, res) {
-    var filename = req.params.file;
-    res.sendfile(path.join(__dirname, 'node_modules', 'epiceditor', 'epiceditor', 'js', 'epiceditor.min.js'));
-});
-
-
-
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });

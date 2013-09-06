@@ -134,3 +134,21 @@ body {
   padding: 0 6px;
   font-size: 10.5px;
 }
+.jumbotron {
+  background-image: url('/images/index.jpeg');
+  height: 300px;
+}
+.jumbotron h1 {
+  font-size: 100px;
+  font-family: 'Myriad-Pro', 'Myriad', helvetica, arial, sans-serif;
+  text-shadow: 2px 3px 3px #292929;
+  letter-spacing: -7px;
+  -webkit-text-stroke: 1px white;
+}
+.jumbotron p {
+  font-size: 50px;
+  font-family: 'Myriad-Pro', 'Myriad', helvetica, arial, sans-serif;
+  text-shadow: 2px 3px 3px #292929;
+  letter-spacing: -3px;
+  -webkit-text-stroke: 1px white;
+}
